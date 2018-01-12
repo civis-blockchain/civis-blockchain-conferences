@@ -1,0 +1,430 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Blockchain intro</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/thingagora.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+<section>
+<h2>La blockchain: introduction et cas d'usage</h2>
+<p>
+<small>
+Luc Yriarte<br>
+<a href="http://www.civis-blockchain.org">Civis Blockchain</a>
+</small>
+</p>
+</section>
+
+
+<section data-background-image="images/block-chain-2853xxx_960_720.jpg">
+<h2>Plan</h2>
+<ul>
+<li>Caractéristiques générales</li>
+<li>Principaux systèmes</li>
+<li>Cas d'usage</li>
+</ul>
+</section>
+
+
+<section data-background="images/block-chain-2853xxx_960_720.jpg">
+<h2>Définition et caractéristiques générales</h2>
+<p>
+La blockchain est un système décentralisé de validation de transactions.
+</p>
+<ul>
+<li>Réseau peer to peer</li>
+<li>Registre distribué</li>
+</ul>
+</section>
+
+
+<section>
+<h2>Réseau peer to peer</h2>
+<p>Chaque noeud de réseau, ou peer</p>
+<ul>
+<li>Traite des transactions</li>
+<li>Valide un bloc de transaction en consensus avec ses peers</li>
+<li>Détient une copie du registre des transactions, ou ledger</li>
+</ul>
+</section>
+
+
+<section>
+
+<section>
+<h2>Registre distribué</h2>
+<ul>
+<li>Fonction de hash</li>
+<li>Transactions groupées en blocs</li>
+<li>Blocks chainés par les hash</li>
+</ul>
+</section>
+
+<section>
+<h3>Chaîne de blocs</h3>
+<img src="images/800px-Bitcoin_Block_Data.png">
+<p>
+<small>
+<a href="https://commons.wikimedia.org/wiki/File:Bitcoin_Block_Data.svg">Wikimedia commons</a><br>
+</small>
+</p>
+</section>
+
+<section>
+<h3>Chaîne principale</h3>
+<img src="images/180px-Blockchain.png">
+<p>
+<small>
+<a href="https://commons.wikimedia.org/wiki/File:Blockchain.svg">Wikimedia commons</a><br>
+</small>
+</p>
+</section>
+
+</section>
+
+
+<section data-background="images/block-chain-2853xxx_960_720.jpg">
+<h2>Principaux Systèmes</h2>
+<ul>
+<li>Bitcoin</li>
+<li>Ethereum</li>
+<li>Hyperledger</li>
+</ul>
+</section>
+
+
+<section>
+
+<section data-background="images/Bitcoin.png">
+<h2>Bitcoin</h2>
+<h3>Satoshi Nakamoto 2008</h3>
+<ul>
+<li>Crypto monnaie</li>
+<li>Proof of work</li>
+<li>Mineurs</li>
+<li>Stateless / UTXO</li>
+</ul>
+</section>
+
+<section data-background="images/Bitcoin.png">
+<table>
+	<thead>
+		<tr>
+			<th></th>
+			<th>Valeur Bitcoin</th>
+			<th>Cout transaction</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2018</td>
+			<td>$17000</td>
+			<td>$15</td>
+		</tr>
+		<tr>
+			<td>2016</td>
+			<td>$430</td>
+			<td>$0.04</td>
+		</tr>
+		<tr>
+			<td>2014</td>
+			<td>$760</td>
+			<td>$0.08</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+180G, 500k blocks, 15k transactions / 7 blocks / heure
+</p>
+<p>
+<small>
+<a href="https://bitinfocharts.com/bitcoin/">bitinfocharts.com</a><br>
+</small>
+</p>
+</section>
+
+<section>
+<h3>Bitcoin transactions</h3>
+<img src="images/640px-Bitcoin_Transaction_Visual.png">
+<p>
+<small>
+<a href="https://commons.wikimedia.org/wiki/File:Bitcoin_Transaction_Visual.svg">Wikimedia commons</a><br>
+</small>
+</p>
+</section>
+
+
+</section>
+
+
+<section>
+
+<section data-background="images/Ethereum.png">
+<h2>Ethereum</h2>
+<h3>Vitalik Buterin 2013</h3>
+<ul>
+<li>Smart contracts</li>
+<li>Solidity language</li>
+<li>Ether / Gas</li>
+<li>Decentralized Autonomous Organization</li>
+</ul>
+</section>
+
+<section data-background="images/Ethereum.png">
+<table>
+	<thead>
+		<tr>
+			<th></th>
+			<th>Valeur Ether</th>
+			<th>Cout transaction</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2018</td>
+			<td>$1000</td>
+			<td>$1</td>
+		</tr>
+		<tr>
+			<td>2016</td>
+			<td>$1</td>
+			<td>$0.001</td>
+		</tr>
+		<tr>
+			<td>2014</td>
+			<td>$3</td>
+			<td>$0.001</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+280G, 4.8M blocks, 50k transactions / 220 blocks / heure
+</p>
+<p>
+<small>
+<a href="https://bitinfocharts.com/ethereum/">bitinfocharts.com</a><br>
+</small>
+</p>
+</section>
+
+</section>
+
+
+<section>
+
+<section data-background="images/hyperledger.png">
+<h2>Hyperledger</h2>
+<h3>Linux foundation 2015</h3>
+<ul>
+<li>Cryptologie asymétrique, consortium, certificats</li>
+<li>Architecture modulaire</li>
+<li>Practical Byzantine Fault Tolerance</li>
+<li>Spécialisation des peers validateurs, ordonnanceurs</li>
+</ul>
+</section>
+
+<section>
+<h3>Blockchain channels</h3>
+<img src="images/world_view.png">
+<p>
+<small>
+<a href="https://github.com/hyperledger/fabric/blob/release/docs/source/images/world_view.png">Hyperledger fabric docs</a><br>
+</small>
+</p>
+</section>
+
+<section>
+<h3>Blockchain application</h3>
+<img src="images/AppConceptsOverview.png">
+<p>
+<small>
+<a href="https://github.com/hyperledger/fabric/blob/release/docs/source/images/AppConceptsOverview.png">Hyperledger fabric docs</a><br>
+</small>
+</p>
+</section>
+
+<section>
+<img src="images/chaincode_swimlane.png">
+<p>
+<small>
+<a href="https://github.com/hyperledger/fabric/blob/release/docs/source/images/chaincode_swimlane.png">Hyperledger fabric docs</a><br>
+</small>
+</p>
+</section>
+
+</section>
+
+
+<section data-background="images/block-chain-2853xxx_960_720.jpg">
+<h2>Cas d'usage</h2>
+<ul>
+<li>Crypto-monnaies, tokens</li>
+<li>Administration dématérialisée</li>
+<li>Traçabilité</li>
+<li>Objets connectés</li>
+</ul>
+</section>
+
+
+<section>
+
+<section>
+<h2>Crypto-monnaies et tokens</h2>
+<ul>
+<li>Altcoins</li>
+<li>Marketplaces</li>
+<li>Initial Coin Offering</li>
+</ul>
+</section>
+
+<section data-background="images/dogecoin.png">
+Bitcoin Ethereum Ripple Cardano Litecoin NEM Stellar IOTA TRON Dash Dragonchain DigiByte Bytecoin Verge BitConnect Monero Veritaseum Ark Electroneum Dogecoin Status Factom Substratum
+QASH MonaCoin Bytom Gas RChain DigitalNote Cobinhood BitcoinDark Syscoin Enigma ChainLink Storm DigixDAO Quantstamp ZCoin PACcoin GameCredits ZClassic Walton Skycoin BitBay Blocknet
+</section>
+
+</section>
+
+
+<section>
+
+<section>
+<h2>Administration dématérialisée</h2>
+<ul>
+<li>Données personnelles, identité, médicales...</li>
+<li>Transactions immobilières, cadastre...</li>
+<li>Vente en ligne, particuliers</li>
+<li>Traçabilité</li>
+</ul>
+</section>
+
+<section>
+<h3>Signature digitale</h3>
+<img src="images/500px-Digital_Signature_diagram.png">
+<p>
+<small>
+<a href="https://commons.wikimedia.org/wiki/File:Digital_Signature_diagram.svg">Wikimedia commons</a><br>
+</small>
+</p>
+</section>
+
+</section>
+
+
+<section>
+
+<section>
+<h2>Objets connectés</h2>
+<ul>
+<li>Données de capteurs, hash</li>
+<li>Déclenchement d'actions automatisées</li>
+<li>Traçabilité</li>
+<li>IOTA / Tangle</li>
+</ul>
+</section>
+
+<section>
+<h3>Tangle</h3>
+<img src="images/Iota-tangle-1.png">
+<p>
+<small>
+<a href="https://commons.wikimedia.org/wiki/File:Iota-tangle-1.png">Wikimedia commons</a><br>
+</small>
+</p>
+</section>
+
+</section>
+
+
+<section>
+
+<section data-background="images/block-chain-2853xxx_960_720.jpg">
+<h2>Conclusion</h2>
+<ul>
+<li>Apports de la blockchain: immutable et décentralisé</li>
+<li>Applications dans l'IoT</li>
+<li>Blockchain publique vs consortium</li>
+</ul>
+</section>
+
+<section>
+<h3>Utilité de la blockchain ?</h3>
+<ul>
+<li>Plusieurs parties impliquées</li>
+<li>Données partagées</li>
+<li>Intérêts potentiellement contradictoires</li>
+<li>Transactions entre les parties</li>
+<li>Interactions bien normalisées</li>
+<li>Besoin de conserver un historique</li>
+</ul>
+</section>
+
+<section>
+<h2>Références</h2>
+<ul>
+<li><a href="https://bitcoincore.org/bitcoin.pdf">Bitcoin whitepaper</a></li>
+<li><a href="https://ethereum.github.io/yellowpaper/paper.pdf">Ethereum yellowpaper</a></li>
+<li><a href="http://www.scs.stanford.edu/nyu/03sp/sched/bfs.pdf">Practical Byzantine Fault Tolerance</a></li>
+<li><a href="https://iota.org/IOTA_Whitepaper.pdf">IOTA witepaper</a></li>
+</ul>
+</section>
+
+</section>
+
+
+<section>
+<h2>Merci, Questions</h2>
+<p>
+<small>
+<a href="http://lyriarte.free.fr">Luc Yriarte</a><br>
+</small>
+</p>
+<br>
+<p style="text-align:left">
+<small>
+<a href="mailto:luc.yriarte@civis-blockchain.org">luc.yriarte@civis-blockchain.org</a><br>
+</small>
+</p>
+
+</section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+/**
+ * ThingAgora theme for reveal.js.
+ *
+ * Copyright (C) 2018 Luc Yriarte
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Colors used in the theme
+$bluegreylite: #eceff1;
+$bluegreymid1: #b0bec5;
+$bluegreymid2: #546e7a;
+$bluegreydark: #37474f;
+$orange_lite: #ffcc80;
+$orange_main: #f57c00;
+$orange_dark: #e65100;
+$teal_lite: #80cbc4;
+$teal_main: #00796b;
+$teal_dark: #004d40;
+
+// Include theme-specific fonts
+@import url(../../lib/font/league-gothic/league-gothic.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+// Override theme settings (see ../template/settings.scss)
+$mainColor: $bluegreydark;
+
+$headingColor: $bluegreymid2;
+
+$backgroundColor: $bluegreylite;
+$selectionBackgroundColor: $orange_lite;
+
+$linkColor: $teal_main;
+$linkColorHover: $orange_main;
+
+// Background generator
+@mixin bodyBackground() {
+	@include radial-gradient( rgba($bluegreymid1,1), rgba($bluegreylite,1) );
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
